@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    
+</head>
+<body>
+
+<div id="container">
+    <div id="code"></div>
+</div>
+
+<script>
+    var qrcode = new QRCode(document.getElementById("code"), {
+        text: "http://127.0.0.1:5501/Portfolio/main.html",
+        width: 128,
+        height: 128
+    });
+</script>
+
+</body>
+</html>
